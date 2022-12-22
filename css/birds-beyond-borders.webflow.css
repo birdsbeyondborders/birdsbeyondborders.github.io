@@ -31,9 +31,9 @@ p {
 
 .hero {
   padding: 75px 50px 440px;
-  background-image: url('../images/Bee-eaters---Niarobi-National-Park---Mustansir-Adamjee.png'), url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg'), url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
-  background-position: 50% 0%, 0px 0px, 0px 0px;
-  background-size: cover, auto, auto;
+  background-image: url('../images/Bee-eaters---Niarobi-National-Park---Mustansir-Adamjee.png');
+  background-position: 50% 0%;
+  background-size: cover;
 }
 
 .body {
