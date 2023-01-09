@@ -112,6 +112,13 @@ p {
   background-size: auto, auto;
 }
 
+.section-about.gambia {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.79)), to(hsla(0, 0%, 100%, 0.79))), url('../images/The-Gambia-Mangroves.jpeg');
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.79), hsla(0, 0%, 100%, 0.79)), url('../images/The-Gambia-Mangroves.jpeg');
+  background-position: 0px 0px, 50% 100%;
+  background-size: auto, cover;
+}
+
 .nav {
   position: absolute;
   left: 0%;
@@ -255,6 +262,14 @@ p {
   .section-about.about {
     background-position: 60% 100%;
     background-size: cover;
+  }
+
+  .section-about.gambia {
+    padding-bottom: 75px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.85)), to(hsla(0, 0%, 100%, 0.85))), url('../images/The-Gambia-Mangroves.jpeg');
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.85), hsla(0, 0%, 100%, 0.85)), url('../images/The-Gambia-Mangroves.jpeg');
+    background-position: 0px 0px, 50% 100%;
+    background-size: auto, cover;
   }
 
   .nav {
