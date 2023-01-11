@@ -23,6 +23,14 @@ h3 {
   font-weight: 400;
 }
 
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 p {
   margin-bottom: 10px;
   font-size: 16px;
@@ -31,9 +39,10 @@ p {
 
 .hero {
   padding: 75px 50px 440px;
-  background-image: url('../images/Bee-eaters-Niarobi-National-Park-Mustansir-Adamjee-BG1.jpg');
-  background-position: 50% 0%;
-  background-size: cover;
+  background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
+  background-position: 50% 10%, 50% 100%;
+  background-size: auto, cover;
+  background-repeat: no-repeat, repeat;
 }
 
 .body {
@@ -41,12 +50,29 @@ p {
 }
 
 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   line-height: 22px;
   text-align: center;
 }
 
+.heading.hero-heading {
+  margin-bottom: 0px;
+}
+
 .cta-button {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 25px;
   border-radius: 20px;
   background-color: #ec6e38;
@@ -191,9 +217,25 @@ p {
   border-top: 2px dashed #000;
 }
 
+.collab-text {
+  font-family: Avenirnextltpro, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.social {
+  margin-left: 10px;
+}
+
+.sub-title {
+  margin-bottom: 35px;
+}
+
 @media screen and (max-width: 991px) {
   .hero {
-    background-size: auto 1200px;
+    background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
+    background-position: 50% 10%, 50% 100%;
+    background-size: auto, cover;
   }
 
   .container {
@@ -241,12 +283,14 @@ p {
   .hero {
     padding-right: 35px;
     padding-left: 35px;
-    background-position: 50% 0%;
-    background-size: auto 1400px;
+    background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
+    background-position: 50% 0%, 50% 100%;
+    background-size: auto, cover;
   }
 
   .links {
-    padding-right: 35px;
+    padding-top: 45px;
+    padding-right: 25px;
   }
 
   .links.footer-links {
@@ -273,7 +317,7 @@ p {
   }
 
   .nav {
-    margin-left: 35px;
+    margin-left: 25px;
   }
 }
 
