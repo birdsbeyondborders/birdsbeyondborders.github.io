@@ -1,34 +1,34 @@
 body {
-  font-family: Arvo, sans-serif;
   color: #333;
+  font-family: Arvo, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
 
 h1 {
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 45px;
   font-family: Avenirnextltpro, sans-serif;
   font-size: 38px;
-  line-height: 44px;
   font-weight: 400;
-  text-align: center;
+  line-height: 44px;
 }
 
 h3 {
   margin-top: 50px;
   margin-bottom: 10px;
   font-size: 24px;
-  line-height: 30px;
   font-weight: 400;
+  line-height: 30px;
 }
 
 h5 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 18px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 p {
@@ -38,11 +38,11 @@ p {
 }
 
 .hero {
-  padding: 75px 50px 440px;
   background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
   background-position: 50% 10%, 50% 100%;
-  background-size: auto, cover;
   background-repeat: no-repeat, repeat;
+  background-size: auto, cover;
+  padding: 75px 50px 440px;
 }
 
 .body {
@@ -50,39 +50,29 @@ p {
 }
 
 .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  text-align: center;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   line-height: 22px;
-  text-align: center;
+  display: flex;
 }
 
 .heading.hero-heading {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .cta-button {
+  letter-spacing: 2px;
+  background-color: #ec6e38;
+  border-radius: 20px;
   margin-top: 45px;
   margin-bottom: 25px;
-  border-radius: 20px;
-  background-color: #ec6e38;
   font-family: Avenirnextltpro, sans-serif;
   font-weight: 700;
-  letter-spacing: 2px;
 }
 
 .cta-button:hover {
-  opacity: 0.75;
+  opacity: .75;
 }
 
 .video-section {
@@ -95,20 +85,20 @@ p {
 }
 
 .links {
-  position: absolute;
-  left: auto;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   padding-top: 50px;
   padding-right: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0%;
 }
 
 .links.footer-links {
-  position: static;
+  float: left;
   margin-left: 25px;
   padding-top: 45px;
-  float: left;
+  position: static;
 }
 
 .section-about {
@@ -116,54 +106,50 @@ p {
 }
 
 .section-about.about {
+  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../images/bee-eater-BG.png');
+  background-position: 0 0, 50% 80%;
+  background-size: auto, cover;
   padding-top: 100px;
   padding-bottom: 250px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.2)), to(hsla(0, 0%, 100%, 0.2))), url('../images/bee-eater-BG.png');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.2), hsla(0, 0%, 100%, 0.2)), url('../images/bee-eater-BG.png');
-  background-position: 0px 0px, 50% 80%;
-  background-size: auto, cover;
 }
 
 .section-about.uk {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url('../images/House-Martins-BG.png');
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../images/House-Martins-BG.png');
-  background-position: 0px 0px, 0px 0px;
+  background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/House-Martins-BG.png');
+  background-position: 0 0, 0 0;
   background-size: auto, cover;
 }
 
 .section-about.kenya {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(41, 0%, 100%, 0.85)), to(hsla(41, 0%, 100%, 0.85))), url('../images/House-martins-kenya.png');
-  background-image: linear-gradient(180deg, hsla(41, 0%, 100%, 0.85), hsla(41, 0%, 100%, 0.85)), url('../images/House-martins-kenya.png');
-  background-position: 0px 0px, 50% 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/House-martins-kenya.png');
+  background-position: 0 0, 50% 100%;
   background-size: auto, auto;
 }
 
 .section-about.gambia {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.79)), to(hsla(0, 0%, 100%, 0.79))), url('../images/The-Gambia-Mangroves.jpeg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.79), hsla(0, 0%, 100%, 0.79)), url('../images/The-Gambia-Mangroves.jpeg');
-  background-position: 0px 0px, 50% 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, .79), rgba(255, 255, 255, .79)), url('../images/The-Gambia-Mangroves.jpeg');
+  background-position: 0 0, 50% 100%;
   background-size: auto, cover;
 }
 
 .nav {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
   margin-top: 50px;
   margin-left: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
 }
 
 .nav.footer-nav {
-  position: static;
   float: left;
   clear: left;
+  position: static;
 }
 
 .nav-link {
-  margin-right: 15px;
   color: #000;
+  margin-right: 15px;
   text-decoration: none;
 }
 
@@ -176,32 +162,32 @@ p {
 }
 
 .link {
-  font-family: Avenirnextltpro, sans-serif;
   color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Avenirnextltpro, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 2px;
   text-decoration: underline;
-  text-transform: uppercase;
 }
 
 .paragraph {
+  letter-spacing: 0;
   margin-bottom: 30px;
-  letter-spacing: 0px;
 }
 
 .team-member {
+  text-align: center;
   margin-top: 20px;
   font-weight: 400;
-  text-align: center;
 }
 
 .team-image {
   width: 200px;
   height: 200px;
+  border-radius: 100px;
   margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 100px;
 }
 
 .wrap {
@@ -213,8 +199,8 @@ p {
 }
 
 .footer {
-  padding-bottom: 50px;
   border-top: 2px dashed #000;
+  padding-bottom: 50px;
 }
 
 .collab-text {
@@ -229,6 +215,21 @@ p {
 
 .sub-title {
   margin-bottom: 35px;
+}
+
+.arocha {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.partner {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.partners {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -250,11 +251,7 @@ p {
     padding-bottom: 259px;
   }
 
-  .section-about.uk {
-    padding-bottom: 75px;
-  }
-
-  .section-about.kenya {
+  .section-about.uk, .section-about.kenya {
     padding-bottom: 75px;
   }
 }
@@ -262,30 +259,31 @@ p {
 @media screen and (max-width: 767px) {
   .video-section {
     padding-top: 25px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .links.footer-links {
     width: 100%;
-    margin-left: 0px;
+    margin-left: 0;
     padding-top: 25px;
     padding-left: 50px;
   }
 
   .nav-link.email {
-    display: block;
     margin-top: 25px;
-    margin-left: 0px;
+    margin-left: 0;
+    display: block;
   }
 }
 
 @media screen and (max-width: 479px) {
   .hero {
-    padding-right: 35px;
-    padding-left: 35px;
     background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
-    background-position: 50% 0%, 50% 100%;
+    background-position: 50% 0, 50% 100%;
     background-size: auto, cover;
+    padding-bottom: 422px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .links {
@@ -294,13 +292,13 @@ p {
   }
 
   .links.footer-links {
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 35px;
   }
 
   .section-about {
-    padding-right: 35px;
     padding-left: 35px;
+    padding-right: 35px;
   }
 
   .section-about.about {
@@ -309,17 +307,21 @@ p {
   }
 
   .section-about.gambia {
-    padding-bottom: 75px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.85)), to(hsla(0, 0%, 100%, 0.85))), url('../images/The-Gambia-Mangroves.jpeg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.85), hsla(0, 0%, 100%, 0.85)), url('../images/The-Gambia-Mangroves.jpeg');
-    background-position: 0px 0px, 50% 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/The-Gambia-Mangroves.jpeg');
+    background-position: 0 0, 50% 100%;
     background-size: auto, cover;
+    padding-bottom: 75px;
   }
 
   .nav {
     margin-left: 25px;
   }
+
+  .partners {
+    margin-bottom: 0;
+  }
 }
+
 
 @font-face {
   font-family: 'Avenirnextltpro it';
