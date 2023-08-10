@@ -1,18 +1,37 @@
+.w-backgroundvideo-backgroundvideoplaypausebutton:focus-visible {
+  outline-offset: 2px;
+  border-radius: 50%;
+  outline: 2px solid #3b79c3;
+}
+
 body {
-  color: #333;
-  font-family: Arvo, sans-serif;
-  font-size: 16px;
+  color: #fff;
+  font-family: Avenirnextltpro, sans-serif;
+  font-size: 15px;
   line-height: 20px;
 }
 
 h1 {
   text-align: center;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  word-break: normal;
   margin-top: 20px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   font-family: Avenirnextltpro, sans-serif;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 50px;
+}
+
+h2 {
+  letter-spacing: 5px;
+  text-indent: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 42px;
 }
 
 h3 {
@@ -33,20 +52,17 @@ h5 {
 
 p {
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
 }
 
-.hero {
-  background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
-  background-position: 50% 10%, 50% 100%;
-  background-repeat: no-repeat, repeat;
-  background-size: auto, cover;
-  padding: 75px 50px 440px;
+a {
+  color: #fff;
+  text-decoration: underline;
 }
 
-.body {
-  font-family: Arvo, sans-serif;
+.hero {
+  padding: 0;
 }
 
 .container {
@@ -59,16 +75,22 @@ p {
 
 .heading.hero-heading {
   margin-bottom: 0;
+  font-size: 75px;
+  line-height: 100px;
 }
 
 .cta-button {
-  letter-spacing: 2px;
-  background-color: #ec6e38;
+  color: #fff;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
   border-radius: 20px;
-  margin-top: 45px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding: 25px 45px;
   font-family: Avenirnextltpro, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .cta-button:hover {
@@ -76,12 +98,12 @@ p {
 }
 
 .video-section {
+  background-color: #000;
+  flex-direction: column;
+  align-items: center;
   padding-top: 75px;
-  padding-bottom: 100px;
-}
-
-.container-2 {
-  text-align: center;
+  padding-bottom: 0;
+  display: flex;
 }
 
 .links {
@@ -95,126 +117,92 @@ p {
 }
 
 .links.footer-links {
-  float: left;
-  margin-left: 25px;
-  padding-top: 45px;
-  position: static;
-}
-
-.section-about {
-  padding: 75px 50px 175px;
-}
-
-.section-about.about {
-  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../images/bee-eater-BG.png');
-  background-position: 0 0, 50% 80%;
-  background-size: auto, cover;
-  padding-top: 100px;
-  padding-bottom: 250px;
-}
-
-.section-about.uk {
-  background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/House-Martins-BG.png');
-  background-position: 0 0, 0 0;
-  background-size: auto, cover;
-}
-
-.section-about.kenya {
-  background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/House-martins-kenya.png');
-  background-position: 0 0, 50% 100%;
-  background-size: auto, auto;
-}
-
-.section-about.gambia {
-  background-image: linear-gradient(rgba(255, 255, 255, .79), rgba(255, 255, 255, .79)), url('../images/The-Gambia-Mangroves.jpeg');
-  background-position: 0 0, 50% 100%;
-  background-size: auto, cover;
-}
-
-.nav {
-  margin-top: 50px;
-  margin-left: 50px;
-  position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: auto;
-}
-
-.nav.footer-nav {
-  float: left;
-  clear: left;
-  position: static;
-}
-
-.nav-link {
-  color: #000;
-  margin-right: 15px;
-  text-decoration: none;
-}
-
-.nav-link.email {
-  margin-left: 25px;
-}
-
-.text-span {
-  text-decoration: underline;
-}
-
-.link {
-  color: #000;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: Avenirnextltpro, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.paragraph {
-  letter-spacing: 0;
-  margin-bottom: 30px;
-}
-
-.team-member {
-  text-align: center;
-  margin-top: 20px;
-  font-weight: 400;
-}
-
-.team-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.wrap {
-  text-align: center;
-}
-
-.video {
-  margin-top: 75px;
-}
-
-.footer {
-  border-top: 2px dashed #000;
+  padding-top: 0;
   padding-bottom: 50px;
 }
 
-.collab-text {
-  font-family: Avenirnextltpro, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+.section-about {
+  text-align: center;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+}
+
+.section-about.partners-section {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-about.team {
+  grid-column-gap: 16px;
+  grid-row-gap: 116px;
+  flex-direction: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 0 0;
+  display: block;
+}
+
+.section-about.end-section {
+  padding-bottom: 100px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 15px;
+  padding: 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.team-member {
+  width: 33.33%;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 400;
+  position: relative;
+}
+
+.team-image {
+  position: relative;
+}
+
+.footer {
+  filter: invert();
+  border-top-width: 2px;
+  border-top-color: #000;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+}
+
+.footer-email {
+  margin-top: 35px;
 }
 
 .social {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .sub-title {
+  letter-spacing: 10px;
   margin-bottom: 35px;
+  font-size: 25px;
+  line-height: 50px;
 }
 
 .arocha {
@@ -224,101 +212,415 @@ p {
 }
 
 .partner {
-  margin-left: 5px;
-  margin-right: 5px;
+  height: 67px;
+  flex-direction: column-reverse;
+  flex: 0 auto;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
 }
 
 .partners {
+  justify-content: center;
   margin-bottom: 40px;
+  display: flex;
+}
+
+.partners-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-white {
+  color: #000;
+}
+
+.partners-text {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.background-video {
+  height: 900px;
+  background-image: linear-gradient(#000, rgba(0, 0, 0, 0) 22%);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.cast-wrapper {
+  display: flex;
+}
+
+.cast {
+  width: 33%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.section-image {
+  height: 400px;
+  background-image: url('../images/rift-valley.jpg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.section-image.issue-image {
+  background-image: url('../images/house-martins-photo.jpeg');
+  background-position: 75%;
+  background-size: cover;
+}
+
+.section-image.film-image {
+  background-image: url('../images/35272285213_b97c250a0e_b.jpeg');
+  background-position: 50%;
+  background-size: cover;
+}
+
+.team-member-row {
+  width: 50%;
+  flex-flow: row;
+  flex: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.team-text {
+  width: 100%;
+  text-align: left;
+  background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
+  padding: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.team-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.funding-list {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  line-height: 30px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 50px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.link-2 {
+  font-weight: 700;
+}
+
+.footer-nav {
+  padding-top: 0;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  position: relative;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.team-heading {
+  margin-bottom: 50px;
+}
+
+.video-wrapper {
+  width: 60%;
+}
+
+.video-2 {
+  margin-top: 25px;
+}
+
+.footer-link-text {
+  color: #000;
+}
+
+.action-image {
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 @media screen and (max-width: 991px) {
-  .hero {
-    background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
-    background-position: 50% 10%, 50% 100%;
-    background-size: auto, cover;
-  }
-
   .container {
     margin-top: 50px;
+  }
+
+  .cta-button {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .video-section {
     padding-top: 50px;
   }
 
-  .section-about.about {
-    padding-bottom: 259px;
+  .nav-link {
+    border-bottom: 1px solid #fff;
+    margin-right: 0;
+    padding: 25px 20px;
   }
 
-  .section-about.uk, .section-about.kenya {
-    padding-bottom: 75px;
+  .nav-link.cta-link {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 20px 18px;
+  }
+
+  .cast-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cast, .team-member-row {
+    width: 100%;
+  }
+
+  .team-wrap {
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .menu-button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
+  .container-3 {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .video-wrapper {
+    width: 80%;
+  }
+
+  .nav-menu {
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
   }
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .heading.hero-heading {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .cta-button {
+    padding-left: 25px;
+  }
+
   .video-section {
     padding-top: 25px;
     padding-bottom: 0;
   }
 
-  .links.footer-links {
+  .links {
     width: 100%;
-    margin-left: 0;
-    padding-top: 25px;
-    padding-left: 50px;
+    justify-content: center;
+    padding-right: 0;
+    display: flex;
   }
 
-  .nav-link.email {
-    margin-top: 25px;
+  .links.footer-links {
+    width: 100%;
+    justify-content: center;
     margin-left: 0;
+    padding-top: 25px;
+    padding-left: 0;
+    display: flex;
+    position: relative;
+  }
+
+  .section-about.partners-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section-about.end-section {
+    padding-bottom: 50px;
+  }
+
+  .nav-link {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .social {
+    margin-right: 30px;
+  }
+
+  .background-video {
+    padding-top: 200px;
+  }
+
+  .team-wrap {
     display: block;
+  }
+
+  .navbar {
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 50px;
+  }
+
+  .footer-nav {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    display: flex;
+  }
+
+  .video-wrapper {
+    width: 90%;
+  }
+
+  .action-text {
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .hero {
-    background-image: url('../images/E92DA4FB-5C0A-4B8F-AB19-DE8C64D6CF1A-copy.png'), url('../images/BBB-Hero-bg-3.jpg');
-    background-position: 50% 0, 50% 100%;
-    background-size: auto, cover;
-    padding-bottom: 422px;
-    padding-left: 35px;
-    padding-right: 35px;
+  .heading.hero-heading {
+    font-size: 45px;
+  }
+
+  .video-section {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .links {
+    justify-content: space-around;
     padding-top: 45px;
-    padding-right: 25px;
+    padding-right: 0;
   }
 
   .links.footer-links {
+    justify-content: space-around;
     margin-left: 0;
-    padding-left: 35px;
+    padding-left: 0;
   }
 
   .section-about {
+    padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
   }
 
-  .section-about.about {
-    background-position: 60% 100%;
-    background-size: cover;
+  .section-about.partners-section {
+    padding-bottom: 0;
   }
 
-  .section-about.gambia {
-    background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .85)), url('../images/The-Gambia-Mangroves.jpeg');
-    background-position: 0 0, 50% 100%;
-    background-size: auto, cover;
-    padding-bottom: 75px;
+  .team-member {
+    text-decoration: none;
   }
 
-  .nav {
-    margin-left: 25px;
+  .social {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sub-title {
+    letter-spacing: 5px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .partner {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .partners {
+    justify-content: space-around;
     margin-bottom: 0;
+  }
+
+  .partners-text {
+    margin-top: 50px;
+  }
+
+  .background-video {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .section-image {
+    height: 300px;
+  }
+
+  .team-text {
+    height: 90px;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+  }
+
+  .navbar {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .video-wrapper {
+    width: 100%;
+  }
+
+  .heading-2 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+
+  .heading-3 {
+    font-size: 18px;
+    line-height: 35px;
   }
 }
 
