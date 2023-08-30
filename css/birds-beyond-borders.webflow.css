@@ -366,6 +366,11 @@ a {
   margin-bottom: 35px;
 }
 
+.partner-div {
+  margin-top: 10px;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     margin-top: 50px;
@@ -494,6 +499,10 @@ a {
     margin-right: 30px;
   }
 
+  .partners {
+    flex-direction: column;
+  }
+
   .background-video {
     padding-top: 200px;
   }
@@ -522,6 +531,10 @@ a {
 
   .action-text {
     margin-bottom: 50px;
+  }
+
+  .partner-div {
+    justify-content: center;
   }
 }
 
