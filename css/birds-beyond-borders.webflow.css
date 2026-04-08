@@ -388,6 +388,10 @@ a {
   display: flex;
 }
 
+.columns {
+  width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     margin-top: 50px;
