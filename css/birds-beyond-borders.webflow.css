@@ -23,8 +23,8 @@
 }
 
 :root {
-  --white: white;
   --black: black;
+  --white: white;
 }
 
 .w-backgroundvideo-backgroundvideoplaypausebutton:focus-visible {
@@ -86,12 +86,12 @@ p {
 }
 
 a {
-  color: #fff;
-  text-decoration: underline;
+  color: #000;
+  text-decoration: none;
 }
 
 .hero {
-  padding: 0;
+  padding: 175px 0 100px;
 }
 
 .container {
@@ -103,21 +103,23 @@ a {
 }
 
 .heading.hero-heading {
+  letter-spacing: 17px;
   margin-bottom: 0;
+  margin-left: 15px;
   font-size: 75px;
   line-height: 100px;
 }
 
 .cta-button {
-  color: #fff;
-  letter-spacing: 10px;
+  color: #000;
+  letter-spacing: 0;
   text-indent: 10px;
   background-color: #0000;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 20px;
   margin-top: 25px;
   margin-bottom: 35px;
-  padding: 25px 45px;
+  padding: 25px 45px 25px 35px;
   font-family: Avenirnextltpro, sans-serif;
   font-weight: 400;
 }
@@ -149,7 +151,6 @@ a {
 
 .section-about {
   text-align: center;
-  background-color: #000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -178,14 +179,15 @@ a {
 }
 
 .section-about.end-section {
-  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .nav-link {
-  color: #fff;
+  text-transform: lowercase;
   margin-right: 15px;
   padding: 0;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -206,7 +208,6 @@ a {
 }
 
 .footer {
-  filter: invert();
   border-top-width: 2px;
   border-top-color: #000;
   justify-content: space-between;
@@ -221,14 +222,19 @@ a {
 }
 
 .social {
+  filter: invert();
   margin-left: 30px;
+}
+
+.social.big-link {
+  margin-top: 50px;
 }
 
 .sub-title {
   letter-spacing: 10px;
   margin-bottom: 35px;
-  font-size: 25px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .arocha {
@@ -274,6 +280,7 @@ a {
   height: 900px;
   padding-top: 200px;
   padding-bottom: 200px;
+  display: none;
 }
 
 .cast-wrapper {
@@ -294,13 +301,18 @@ a {
   background-image: url('../images/rift-valley.jpg');
   background-position: 50%;
   background-size: cover;
-  height: 400px;
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .section-image.issue-image {
   background-image: url('../images/house-martins-photo.jpeg');
   background-position: 75%;
   background-size: cover;
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .section-image.film-image {
@@ -389,7 +401,36 @@ a {
 }
 
 .columns {
-  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.body {
+  color: #000;
+}
+
+.background-video-2 {
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: block;
+}
+
+.image {
+  width: 75px;
+}
+
+.hm-link {
+  width: 200px;
+  margin-top: 25px;
+}
+
+.bold-text {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
@@ -397,17 +438,21 @@ a {
     margin-top: 50px;
   }
 
-  .cta-button {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   .video-section {
     padding-top: 50px;
   }
 
+  .links {
+    z-index: 100;
+  }
+
+  .section-about.end-section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .nav-link {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--black);
     margin-right: 0;
     padding: 25px 20px;
   }
@@ -424,7 +469,16 @@ a {
     align-items: center;
   }
 
-  .cast, .team-member-row {
+  .cast {
+    width: 100%;
+  }
+
+  .section-image, .section-image.issue-image {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .team-member-row {
     width: 100%;
   }
 
@@ -438,8 +492,7 @@ a {
   }
 
   .menu-button {
-    color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 20px;
     margin-right: 20px;
   }
@@ -454,9 +507,15 @@ a {
   }
 
   .nav-menu {
-    background-color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
     height: 100vh;
     position: fixed;
+  }
+
+  .background-video-2 {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -465,13 +524,14 @@ a {
     font-size: 14px;
   }
 
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .heading.hero-heading {
     font-size: 50px;
     line-height: 75px;
-  }
-
-  .cta-button {
-    padding-left: 25px;
   }
 
   .video-section {
@@ -483,7 +543,7 @@ a {
     justify-content: center;
     width: 100%;
     padding-right: 0;
-    display: flex;
+    display: none;
   }
 
   .links.footer-links {
@@ -520,6 +580,11 @@ a {
     margin-right: 30px;
   }
 
+  .sub-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
   .partners {
     flex-direction: column;
   }
@@ -534,7 +599,7 @@ a {
 
   .navbar {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-right: 50px;
   }
 
@@ -544,6 +609,10 @@ a {
     align-items: center;
     padding-left: 0;
     display: flex;
+  }
+
+  .container-3 {
+    padding-left: 0;
   }
 
   .video-wrapper {
@@ -560,8 +629,14 @@ a {
 }
 
 @media screen and (max-width: 479px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 75px;
+  }
+
   .heading.hero-heading {
-    font-size: 45px;
+    font-size: 32px;
+    line-height: 51px;
   }
 
   .video-section {
@@ -589,6 +664,11 @@ a {
 
   .section-about.partners-section {
     padding-bottom: 0;
+  }
+
+  .section-about.end-section {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .team-member {
@@ -655,6 +735,10 @@ a {
   .heading-3 {
     font-size: 18px;
     line-height: 35px;
+  }
+
+  .hm-link {
+    margin-bottom: 50px;
   }
 }
 
