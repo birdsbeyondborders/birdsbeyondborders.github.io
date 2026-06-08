@@ -427,10 +427,24 @@ a {
 .hm-link {
   width: 200px;
   margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bold-text {
   font-weight: 400;
+}
+
+.africa {
+  margin-top: 25px;
+}
+
+.passage {
+  margin-bottom: 50px;
+}
+
+.africa-image {
+  height: 300px;
 }
 
 @media screen and (max-width: 991px) {
@@ -625,6 +639,10 @@ a {
 
   .partner-div {
     justify-content: center;
+  }
+
+  .africa-image {
+    height: auto;
   }
 }
 
